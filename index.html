@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="src/css/style.css"/>
+    <link rel="stylesheet" href="src/css/largeDevice.css"/>
+    <link rel="stylesheet" href="src/css/mediumDevice.css"/>
+    <link rel="stylesheet" href="src/css/smallDevice.css"/>
+    <link rel="stylesheet" href="src/css/extraSmallDevice.css"/>
+</head>
+<body>
+
+    <div id="searchContainer" class="container">
+        <div class="row">
+            <form action="">
+                <div class="form-group">
+                    <label for="countries" class="labelCountries searchContainerElement">Nationalité :</label>
+                    <select name="country" class="searchControl searchContainerElement" id="countries">
+                        <option value="NONE" selected>--</option>
+                        <option value="FR">Française</option>
+                        <option value="US">Américaine</option>
+                    </select>
+                    <input type="text" placeholder="Ville ou Code Postal" id="searchInput" class="searchControl searchContainerElement">
+                    <button type="submit" class="btn searchControl searchControlElement validationInput" id="searchButton">Rechercher</button>
+                </div>  
+            </form>    
+        </div>
+    </div>
+
+    <div id="weatherContainer" class="container">
+        <div class="row title items-center">
+            <h1 class="bigTitle" id="cityHeader"></h1>
+        </div>
+
+        <div class="row description items-center">
+            <div class="containerDiscription" id="temperature"></div>
+            <div class="containerDiscription"id="weatherDescriptionHeader"></div>
+            <div class="containerDiscription"><img src="" alt="" id="documentIconImg" class="iconWeather img-fluid" /></div>
+        </div>
+
+        <div class="row weather items-center">
+            <div id="windSpeed" class="bottomDetails wind"></div>
+            <div id="humidity" class="bottomDetails humidity"></div>
+        </div> 
+    </div>
+
+    <div id="errorCityContainer" class="errorCity container">
+        <div class="row messageError items-center">
+            <h1 id="titleError" class="titleError bigTitle"></h1>
+        </div>
+    </div>
+    
+    
+    <script type="module" src="src/js/main.js"></script>
+</body>
+</html>

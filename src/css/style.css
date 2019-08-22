@@ -1,0 +1,120 @@
+html,body, .row{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    box-sizing: border-box;
+    height: 100vh;
+    background: linear-gradient(rgb(47,150,163), rgb(48,62,143));
+    color: #FFF;
+    text-shadow: 2px 2px 1px #000;
+    font-family: 'Palatino Linotype', 'Book Antiqua', Palatino, serif;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+#searchContainer{
+    padding: 1em;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 850px;
+    font-size: 22px;
+}
+
+.searchContainerElement{
+    margin: 0rem 1rem;
+}
+
+.labelCountries{
+    font-weight: 900;
+    margin-top: 0.3em; 
+}
+
+.validationInput{
+    background: rgb(1,159,198);
+    color: #000;
+    font-weight: 900;
+    font-size: 22px;
+}
+
+.searchControl{
+    box-shadow: 2px 2px 5px #000;
+    border-radius: 5px;
+    padding: 5px;
+    border: none;
+}
+
+#searchInput{
+    font-weight: 900;
+    text-align: center;
+}
+
+#weatherContainer, #errorCityContainer{
+    position: absolute;
+    background: rgba(0,0,0,0.5);
+    box-shadow: 1px 1px 5px #000;
+    padding: 3rem;
+    border-radius: 10px;
+    margin: 50px 0 auto;
+    visibility: hidden;
+}
+
+#weatherContainer{
+    width: 800px;
+}
+
+#errorCityContainer{
+    text-align: center;
+    width: 950px;
+}
+
+.items-center{
+    justify-content: center;
+}
+
+.title{
+    justify-content: center;
+}
+
+.bigTitle{
+    font-size: 60px;
+    padding: 0.2em;
+    font-weight: 900;
+    font-family: 'Lucita Sans Unicode', 'Lucida Grande' sans-serif;
+    
+}
+
+.description{
+    align-items: center;
+}
+
+.containerDiscription{
+    margin: 1em;
+    font-size: 30px;
+}
+
+.img-fluid{
+  max-width: 100%;
+  height: auto;
+}
+
+.weather{
+    display: flex;
+    justify-content: space-around;
+}
+
+.wind, .humidity{
+    font-size: 22px;
+    padding: 0.5em 0;
+}
+
+
+
+
+

@@ -1,0 +1,38 @@
+@media (max-width: 575.98px) { 
+
+    body{
+        background-repeat: repeat;
+    }
+
+    #searchContainer{
+        width: 100vw;
+    }
+
+    .form-group{
+        text-align: center;
+    }
+
+    .searchContainerElement{
+        margin: 20px 0;
+    }
+
+    #weatherContainer, #errorCityContainer{
+        width: 100vw;
+        height: 100vh;
+        top: 50%;
+    }
+
+    .containerDiscription{
+        margin: 0.5em;
+    }
+
+    #weatherDescriptionHeader{
+        text-align: center;
+    }
+
+    .humidity{
+        margin: 0 0 20px;
+        padding: 0 0 20px;
+    }
+
+ }

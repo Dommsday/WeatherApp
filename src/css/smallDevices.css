@@ -1,0 +1,14 @@
+@media (min-width: 576px) and (max-width: 767.98px) { 
+
+    #searchContainer{
+        right: initial;
+    }
+
+    .form-group{
+        text-align: center;
+    }
+
+    .searchContainerElement{
+        margin: 15px 20px;
+    }
+ }

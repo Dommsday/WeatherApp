@@ -1,0 +1,10 @@
+@media (min-width: 992px) and (max-width: 1199.98px) { 
+    #searchContainer{
+        position: absolute;
+        top: 0;
+        right: initial;
+        width: initial;
+    }
+
+    
+ }

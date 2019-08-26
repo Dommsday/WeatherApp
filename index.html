@@ -5,16 +5,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Weather App</title>
+    <link rel="icon" type="image/png" sizes="16x16" href="src/images/favicon.png">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="src/css/style.css"/>
     <link rel="stylesheet" href="src/css/largeDevice.css"/>
     <link rel="stylesheet" href="src/css/mediumDevice.css"/>
     <link rel="stylesheet" href="src/css/smallDevice.css"/>
     <link rel="stylesheet" href="src/css/extraSmallDevice.css"/>
+
+    <!--Facebook-->
+    <meta property="og:title" content="Weather App">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.julien-zimmermann.fr/weatherApp/index.html">
+    <meta property="og:image" content="https://www.julien-zimmermann.fr/weatherApp/src/images/clouds.jpg">
+    <meta property="og:description" content="Application météo pour savoir quel temps il fait dans différentes villes du monde">
+    
+    <!--Twitter-->
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:description" content="Application météo pour savoir quel temps il fait dans différentes villes du monde"/>
+    <meta name="twitter:site" content=" ">
+    <meta name="twitter:image" content="https://www.julien-zimmermann.fr/weatherApp/src/images/clouds.jpg">
 </head>
 <body>
 
-    <div id="searchContainer" class="container">
+    <header id="searchContainer" class="container">
         <div class="row">
             <form action="">
                 <div class="form-group">
@@ -29,9 +43,9 @@
                 </div>  
             </form>    
         </div>
-    </div>
+    </header>
 
-    <div id="weatherContainer" class="container">
+    <main id="weatherContainer" class="container">
         <div class="row title items-center">
             <h1 class="bigTitle" id="cityHeader"></h1>
         </div>
@@ -46,7 +60,7 @@
             <div id="windSpeed" class="bottomDetails wind"></div>
             <div id="humidity" class="bottomDetails humidity"></div>
         </div> 
-    </div>
+    </main>
 
     <div id="errorCityContainer" class="errorCity container">
         <div class="row messageError items-center">
